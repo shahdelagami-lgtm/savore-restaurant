@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reservation</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg  bg-dark navbar-dark fixed-top">
+        <div class="container-fluid">
+
+            <a href="index.html" class="navbar-brand" target="_self">SAVORE`<i class="fa-solid fa-home"></i></a>
+            <p class="text-white fs-4 p-1">call us for reservation:01200548574</p>
+        </div>
+
+    </nav>
+    <section class="hero">
+        <video class="hero-video" autoplay muted loop>
+       <source src="https://media.istockphoto.com/id/2208920996/video/close-up-woman-enjoys-lunch-with-fresh-salad-and-pastry-at-caf%C3%A9-table.mp4?s=mp4-640x640-is&k=20&c=rI6k7OSji5Y7EdYoqhqK-NeJ8KM4y5jGF2O1gL1YKGA=" type="video/mp4">
+        </video>
+       <div class="hero-btn-container">
+         <span><a href="#form">Make a Booking</a></span>
+       </div>
+    </section>
+    
+    <br><br>
+    <div class="text-center">
+        <h2 class="fs-1">Make Your Life Tasty</h2>
+    <p class="fs-4">"Every dish tells a story of authentic flavors and exceptional passion. Join us for a unique culinary journey and reserve your seat now."</p>
+   <span class="minispan"><a href="#minimenu">Learn More</a></span>
+    </div>
+
+  <h1 class="text-white text-center fs-1 m-5">Make Reservation</h1>
+  
+  <section id="form" class="py-4 container">
+    <div class="formimg">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThimdqKnbDAstdWeUPE41YfWFnDNzN5va8j4Y67tvZzg&s=10" alt="hamburger">
+    </div>
+  <div class="formbox">
+    <form  id="form1">
+      <div class="formtwo">
+        <div class="one">
+          <label for="date">Date*</label>
+          <input type="date" id="date" required>
+        </div>
+        <div class="one">
+          <label for="time">Time*</label>
+          <input type="time" id="time" required>
+        </div>
+      </div>
+
+      <div class="one">
+        <label for="number">Number Of People*</label>
+        <input type="number" id="number" placeholder="How many people?" required>
+      </div>
+
+      <div class="one">
+        <label for="name">Your Name*</label>
+        <input type="text" id="name1" placeholder="Enter your full name" required>
+        <p id="nameError" class="text-danger mt-1 mb-0"></p>
+      </div>
+
+      <div class="one">
+        <label for="email">Email address*</label>
+        <input type="email" id="email1" placeholder="name@example.com" required>
+        <p id="emailError" class="text-danger mt-1 mb-0"></p>
+      </div>
+
+      <div class="one">
+        <label for="phone">Phone Number*</label>
+        <input type="tel" id="phone" placeholder="01xxxxxxxxx" required>
+        <p id="phoneError" class="text-danger mt-1 mb-0"></p>
+      </div>
+
+      <button type="submit">Book Now</button>
+    </form>
+  </div>
+  </section>
+
+  <br><br><br>
+  <section class="menu-bg" id="minimenu">
+      <h2 class="fs-2 text-center text-white mb-4">special menu</h2>
+      
+      <div class="container ">
+     <div class="row g-3">
+         <div class="col-12 col-md-6 col-lg-3 col-xl-3">
+             <div class="card bg-transparent border-0 zoom">
+                 <a href="drinks.html"><img class="rounded-circle w-100" src="../image/images.jfif" style="height: 250px; width: 250px;" alt="fancy drinks"></a>
+                 <h3 class="text-white text-center mt-3">drinks</h3>
+             </div>
+         </div>
+         <div class="col-12 col-md-6 col-lg-3 col-xl-3">
+             <div class="card bg-transparent border-0 zoom">
+                 <a href="breakfast.html"><img class="rounded-circle w-100" src="../image/images (1).jfif" style="height: 250px; width: 250px;" alt="breakfast"></a>
+                 <h3 class="text-white text-center mt-3">breakfast</h3>
+             </div>
+         </div>
+         <div class="col-12 col-md-6 col-lg-3 col-xl-3">
+             <div class="card bg-transparent border-0 zoom">
+                 <a href="lunch.html"><img class="rounded-circle w-100" src="../image/images (2).jfif" style="height: 250px; width: 250px;" alt="lunch"></a>
+                 <h3 class="text-white text-center mt-3">lunch</h3>
+             </div>
+         </div>
+         <div class="col-12 col-md-6 col-lg-3 col-xl-3">
+             <div class="card bg-transparent border-0 zoom">
+                 <a href="dessert.html"><img class="rounded-circle w-100" src="../image/images (3).jfif" style="height: 250px; width: 250px;" alt="dessert"></a>
+                 <h3 class="text-white text-center mt-3">dessert</h3>
+             </div>
+         </div>
+     </div>
+</div>
+  </section>
+  <div class="alert" id="book-alert"></div>
+<script src="../js/script.js"></script>
+</body>
+</html>

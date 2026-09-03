@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAVORÉ - Dessert Menu</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        body {
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../image/img10.jfif') !important;
+            background-size: cover !important;
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            background-attachment: fixed !important;
+            color: #fff !important;
+        }
+        header.hero {
+            height: auto !important;
+            min-height: unset !important;
+            background: transparent !important;
+        }
+        .card {
+            background-color: rgba(0, 0, 0, 0.8)!important;
+            border: 1px solid white !important;
+        }
+        .card img {
+            height: 220px !important;
+            object-fit: cover !important;
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <input type="checkbox" id="check">
+        <label for="check" class="fa-solid fa-bars"></label>
+        <nav class="navbar">
+            <a href="index.html" class="logo">SAVORÉ</a>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index.html#menu-section">MENU</a></li>
+                <li><a href="cart.html">CART</a></li>
+            </ul>
+            <div class="icons">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="cart.html" class="cart-btn" style="position: relative; text-decoration: none; color: #fff; font-size: 20px; margin-left: 15px;">🛒<span id="cart-count">0</span></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about" style="margin-top: 40px;">
+            <div class="header">
+                <h1>DESSERT MENU</h1>
+                <p class="subtitle" style="color: #db4019; font-weight: 700;">Freshly Prepared Everyday From 10 AM - 10 PM</p>
+            </div>
+            <div class="menu-container">
+                <div class="card">
+                    <img src="../image/chocolate-cake.jpg" alt="Chocolate Cake">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>Chocolate Cake</h3>
+                            <span class="price">$15</span>
+                        </div>
+                        <p class="con-t">Rich chocolate cake layered with creamy chocolate frosting.</p>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="../image/cheesecake.jfif" alt="Cheesecake">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>Cheesecake</h3>
+                            <span class="price">$18</span>
+                        </div>
+                        <p class="con-t">Creamy cheesecake with a crunchy biscuit base.</p>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="../image/Hot-chocolate-fudge-cake_7-2.webp" alt="Chocolate Brownie">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>Chocolate Brownie</h3>
+                            <span class="price">$12</span>
+                        </div>
+                        <p class="con-t">Warm chocolate brownie served with rich chocolate sauce.</p>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="../image/tiramisu.jfif" alt="Tiramisu">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>Tiramisu</h3>
+                            <span class="price">$16</span>
+                        </div>
+                        <p class="con-t">Classic Italian dessert with coffee and mascarpone cream.</p>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="../image/pancake.jfif" alt="Berry Pancake">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>Berry Pancake</h3>
+                            <span class="price">$14</span>
+                        </div>
+                        <p class="con-t">Fluffy pancakes topped with fresh berries and sweet syrup.</p>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="../image/icecream.jfif" alt="Ice Cream">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3>Ice Cream</h3>
+                            <span class="price">$10</span>
+                        </div>
+                        <p class="con-t">Creamy ice cream served with chocolate and fresh fruit.</p>
+                        <a href="#" class="order-btn">Order Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+<script src="../js/script.js"></script>
+</body>
+</html>

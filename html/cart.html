@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - SAVORÉ</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        body {
+            background-color: #121212;
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+            padding: 40px 20px;
+        }
+        .cart-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #1e1e1e;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #d4af37;
+        }
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid #333;
+        }
+        .cart-total {
+            margin-top: 25px;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: right;
+        }
+        .back-btn, .clear-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .back-btn {
+            background-color: #d4af37;
+            color: #121212;
+        }
+        .clear-btn {
+            background-color: #ff4757;
+            color: white;
+            border: none;
+            cursor: pointer;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cart-container">
+        <h1>Your Shopping Cart</h1>
+        <div id="cart-items-list">
+        </div>
+        
+        <div class="cart-total" id="cart-total">
+            Total: $0
+        </div>
+
+        <button class="clear-btn" onclick="clearCart()">Clear Cart</button>
+        <a href="index.html" class="back-btn">Back to Home</a>
+    </div>
+
+    <script>
+        function displayCart() {
+            let cart = JSON.parse(localStorage.getItem('restaurantCart')) || [];
+            const container = document.getElementById('cart-items-list');
+            const totalElement = document.getElementById('cart-total');
+            
+            container.innerHTML = '';
+            
+            if (cart.length === 0) {
+                container.innerHTML = '<p style="text-align:center; color:#888;">Your cart is empty.</p>';
+                totalElement.innerText = 'Total: $0';
+                return;
+            }
+
+            let total = 0;
+            cart.forEach((item, index) => {
+                total += item.price;
+                container.innerHTML += `
+                    <div class="cart-item">
+                        <span>${item.name}</span>
+                        <span>$${item.price}</span>
+                        <button onclick="removeItem(${index})" style="background:none; border:none; color:#ff4757; cursor:pointer; font-size:16px;">❌</button>
+                    </div>
+                `;
+            });
+
+            totalElement.innerText = `Total: $${total}`;
+        }
+
+        function removeItem(index) {
+            let cart = JSON.parse(localStorage.getItem('restaurantCart')) || [];
+            cart.splice(index, 1);
+            localStorage.setItem('restaurantCart', JSON.stringify(cart));
+            displayCart();
+        }
+
+        function clearCart() {
+            localStorage.removeItem('restaurantCart');
+            displayCart();
+        }
+
+        displayCart();
+    </script>
+</body>
+</html>

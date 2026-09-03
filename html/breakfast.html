@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakfast Menu - Flavoro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+    body {
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../image/img10.jfif') !important;
+        background-size: cover !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-attachment: fixed !important;
+        color: #fff !important;
+    }
+    header.hero {
+        height: auto !important;
+        min-height: unset !important;
+        background: transparent !important;
+    }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <input type="checkbox" id="check">
+        <label for="check" class="fa-solid fa-bars"></label>
+        <nav class="navbar">
+            <a href="index.html" class="logo">SAVORÉ</a>
+            <ul class="nav-links">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="index.html#menu-section">MENU</a></li>
+                <li><a href="cart.html">CART</a></li>
+            </ul>
+            <div class="icons">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="cart.html" class="cart-btn" style="position: relative; text-decoration: none; color: #fff; font-size: 20px; margin-left: 15px;">🛒<span id="cart-count">0</span></a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="about" style="margin-top: 20px;">
+        <div class="header">
+            <h1>BREAKFAST MENU</h1>
+            <p class="subtitle">Freshly Prepared Everyday From 7 AM - 12 PM</p>
+        </div>
+
+        <div class="menu-container">
+            <div class="card">
+                <img src="../image/pancake.jfif" alt="Pancakes">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h3>Pancakes</h3>
+                        <span class="price">$12</span>
+                    </div>
+                    <p class="con-t">Fluffy pancakes served with fresh berries and sweet maple syrup.</p>
+                    <a href="#" class="order-btn">Order Now</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../image/freanch toast.jpeg" alt="French Toast">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h3>French Toast</h3>
+                        <span class="price">$14</span>
+                    </div>
+                    <p class="con-t">Golden French toast served with fresh fruit and sweet syrup.</p>
+                    <a href="#" class="order-btn">Order Now</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../image/scrambled-eggs-with-veggies-closeup.jpg" alt="Omelette">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h3>Cheese Omelette</h3>
+                        <span class="price">$15</span>
+                    </div>
+                    <p class="con-t">Fresh eggs filled with melted cheese and seasonal vegetables.</p>
+                    <a href="#" class="order-btn">Order Now</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../image/avocado.jfif" alt="Avocado Toast">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h3>Avocado Toast</h3>
+                        <span class="price">$16</span>
+                    </div>
+                    <p class="con-t">Toasted bread topped with fresh avocado and poached eggs.</p>
+                    <a href="#" class="order-btn">Order Now</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../image/coraso.jfif" alt="Croissant">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h3>Croissant</h3>
+                        <span class="price">$10</span>
+                    </div>
+                    <p class="con-t">Freshly baked buttery croissant served warm and crispy.</p>
+                    <a href="#" class="order-btn">Order Now</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../image/english breakfast.jfif" alt="English Breakfast">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h3>English Breakfast</h3>
+                        <span class="price">$20</span>
+                    </div>
+                    <p class="con-t">Eggs served with sausage, beans, tomatoes and toasted bread.</p>
+                    <a href="#" class="order-btn">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<script src="../js/script.js"></script>
+</body>
+</html>
